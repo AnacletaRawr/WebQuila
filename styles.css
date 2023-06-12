@@ -1,0 +1,188 @@
+/* --- --- --- GENERAL --- --- --- */
+
+* {
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 400;
+}
+
+body {
+    margin: 0;
+}
+
+
+/* --- --- --- ENCABEZADO --- --- --- */
+
+header {
+    /* Cinta encabezado */
+    background-color: #D1F7E3;
+    width: 100%;
+}
+
+header p {
+    /* Texto del encabezado */
+    color: #6E7F8D;
+    margin: 0;
+    font-size: 13px;
+    font-weight: 400;
+    text-align: center;
+    padding: 10px 0;
+}
+
+
+/* --- --- --- BARRA DE NAVEGACIÓN --- --- --- */
+
+nav {
+    margin: 0 100px;
+    max-width: 1240px;
+    margin-bottom: 25px;
+}
+
+@media screen and (min-width:1440px) {
+    nav {
+        margin: 0 auto;
+        margin-bottom: 25px;
+    }
+}
+
+
+/* --- --- --- BARRA DE NAVEGACIÓN - FILA 1 --- --- --- */
+
+.nav1 {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    margin: 0;
+}
+
+.nav1 div {
+    display: inline-block;
+    width: 32%;
+}
+
+#logo {
+    width: 105px;
+}
+
+.search-container {
+    text-align: center;
+}
+
+.search-container form {
+    width: 100%;
+    max-width: 700px;
+    height: 30px;
+    background: #CDC6C3;
+    display: flex;
+    align-items: center;
+    border-radius: 30px;
+}
+
+.search-container input {
+    background-color: transparent;
+    flex: 1;
+    border: 0;
+    outline: none;
+    padding: 0 10px;
+    color: #333333;
+    font-size: 13px;
+}
+
+::placeholder {
+    color: #333333;
+}
+
+.search-container button {
+    background-color: #75B490;
+    color: #E6EBF1;
+    border: 0;
+    font-size: 16px;
+    border-radius: 50%;
+    height: 30px;
+    width: 30px;
+    cursor: pointer;
+}
+
+.redes {
+    text-align: center;
+}
+
+.redes i {
+    color: #75B490;
+    font-size: 25px;
+    padding: 0 13px;
+}
+
+
+/* --- --- --- BARRA DE NAVEGACIÓN - FILA 2 --- --- --- */
+
+.nav2 {
+    width: 100%;
+    height: 45px;
+    text-align: center;
+    margin-top: 60px;
+}
+
+.nav2 ul {
+    /*Distribución de los elementos de la lista*/
+    display: flex;
+    justify-content: space-between;
+    /*Dimensiones de la caja*/
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    list-style-type: none;
+}
+
+.nav2 li {
+    display: table;
+    /*Dimensiones de la caja*/
+    width: 100%;
+    max-width: 150px;
+    text-align: center;
+}
+
+.nav2 li:hover {
+    background-color: #E6EBF1;
+}
+
+.nav2 a {
+    display: table-cell;
+    vertical-align: middle;
+    width: 100%;
+    height: 100%;
+    /*Formato del texto de enlace*/
+    text-decoration: none;
+    font-size: 13px;
+}
+
+.dropdown-catalogo {
+    background-color: #75B490;
+}
+
+.dropdown-catalogo:hover {
+    background-color: red;
+}
+
+.dropdown-catalogo button {
+    background-color: transparent;
+    height: 100%;
+    width: 100%;
+    border: 0;
+    cursor: pointer;
+    color: #D1F7E3;
+    padding: 8px 0 2px 0;
+}
+
+.dropdown-catalogo i {
+    color: #333333;
+}
+
+
+/* --- --- --- CARRUSEL BANNER --- --- --- */
+
+.carrusel {
+    background-color: #75B490;
+    width: 100%;
+    height: 500px;
+}
