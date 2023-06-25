@@ -5,6 +5,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Newsreader&family=Roboto&display=swap" rel="stylesheet">
     <script src="https://kit.fontawesome.com/bfbb254755.js" crossorigin="anonymous"></script>
 
 
@@ -17,7 +20,7 @@
         <p>Productos artesanales de emprendedores, artistas y artesanos, con identidad local del territorio Araucanía Andina.</p>
     </header>
     <!-- Barra de navegación -->
-    <nav>
+    <nav class="interior">
         <!--- --- --- BARRA DE NAVEGACIÓN - FILA 1 --- --- --->
         <div class="nav1">
             <div>
@@ -49,8 +52,85 @@
             </ul>
         </div>
     </nav>
-    <!--- --- --- CARRUSEL BANNER --- --- --->
-    <div class="carrusel"></div>
+
+    <main class="interior">
+        <!--- --- --- TÍTULO RUBROS --- --- --->
+        <div class="titulo">
+            <h1>Categorías</h1>
+        </div>
+        <!--- --- --- GRILLA DE CATEGORÍAS --- --- --->
+        <div class="grid-categoria">
+
+            <div class="tarjeta-categoria" style="background-image: url(images/loza.jpg);">
+                <button>Tejidos</button>
+            </div>
+            <div class="tarjeta-categoria" style="background-image: url(images/loza.jpg);">
+                <button>Diseño Textil</button>
+            </div>
+            <div class="tarjeta-categoria" style="background-image: url(images/loza.jpg);">
+                <button>Serigrafía</button>
+            </div>
+            <div class="tarjeta-categoria" style="background-image: url(images/loza.jpg);">
+                <button>Artesanía</button>
+            </div>
+            <div class="tarjeta-categoria" style="background-image: url(images/loza.jpg);">
+                <button>Salud y Bienestar</button>
+            </div>
+            <div class="tarjeta-categoria" style="background-image: url(images/loza.jpg);">
+                <button>Arte y Pintura</button></div>
+            <div class="tarjeta-categoria" style="background-image: url(images/loza.jpg);">
+                <button>Gourmet</button>
+            </div>
+            <div class="tarjeta-categoria" style="background-image: url(images/loza.jpg);">
+                <button>Alimentos naturales</button>
+            </div>
+
+            <div id="ver-todo" class="tarjeta-categoria" style="background-image: url(images/gotas.webp);">
+                <button>Ver todos los productos</button>
+            </div>
+        </div>
+
+    </main>
+    <!--- --- --- FOOTER --- --- --->
+    <footer>
+        <div id="decor">
+            <img src="" alt="">
+            <p>Aquí va una imagen decorativa</p>
+        </div>
+        <div id="pre-footer">
+            <div class="interior">
+                <div id="info-tienda">
+                    <p>TIENDA</p>
+                    <i></i>
+                    <ul>
+                        <p>Horario de atención:</p>
+                        <li>Lunes a viernes de 09:30 a 19:00</li>
+                        <li>Sábado de 12:00 a 18:00</li>
+                    </ul>
+                    <i></i>
+                    <ul>
+                        <p>Dirección:</p>
+                        <li>Hernán Trizano 522, Cunco.</li>
+                        <li>Región de la araucanía, Chile.</li>
+                    </ul>
+                </div>
+                <div id="form-conecta">
+                    <p>CONECTA CON QUILA</p>
+                    <p>¡Ingresa tu e-mail para enterarte de todas nuestras novedades!</p>
+                    <form action="">
+                        <input type="text" name="" id="">
+                        <input type="submit" name="" id="">
+                    </form>
+                </div>
+            </div>
+            <p id="copyright">Todos los derechos reservados &copy;2023 Quila.</p>
+        </div>
+        <div id="footer-rrss">
+            <i class="fa-brands fa-square-facebook"></i>
+            <i class="fa-brands fa-square-instagram"></i>
+            <i class="fa-brands fa-square-whatsapp"></i>
+        </div>
+    </footer>
 </body>
 
 </html>
